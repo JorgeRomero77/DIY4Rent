@@ -16,10 +16,7 @@ public class Intervalo {
   private int id;
   private String inicio;
   private String fin;
-  
-	public Intervalo() {
-		
-	}
+
 	
 	public Intervalo(int id, String inicio, String fin) {
 		super();
