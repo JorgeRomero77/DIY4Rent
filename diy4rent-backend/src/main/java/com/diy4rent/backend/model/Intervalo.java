@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "intervalos")
 
-public class Intervalos {
+public class Intervalo {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +17,16 @@ public class Intervalos {
   private String inicio;
   private String fin;
   
+	public Intervalo() {
+		
+	}
+	
+	public Intervalo(int id, String inicio, String fin) {
+		super();
+		this.id = id;
+		this.inicio = inicio;
+		this.fin = fin;
+	}
 
 
   public int getId() {
