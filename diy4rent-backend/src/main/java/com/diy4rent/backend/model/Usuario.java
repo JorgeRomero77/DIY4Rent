@@ -22,14 +22,14 @@ public class Usuario {
   @Column(name = "CORREO", nullable = false)
   private String correo;
   
-  @Column(name = "TELÉFONO", nullable = false)
-  private int teléfono;
+  @Column(name = "TELEFONO", nullable = false)
+  private int telefono;
   
   @Column(name= "PAYPAL", nullable = false)
   private String paypal;
   
-  @Column(name= "DIRECCIÓN", nullable = false)
-  private String dirección;
+  @Column(name= "DIRECCION", nullable = false)
+  private String direccion;
   
   @Column(name= "CONTRASEÑA", nullable = false)
   private String contraseña;
@@ -40,13 +40,13 @@ public class Usuario {
 	}
 
 	
-	public Usuario(int id, String nombre, String correo, int teléfono, String paypal, String dirección, String contraseña) {
+	public Usuario(int id, String nombre, String correo, int telefono, String paypal, String direccion, String contraseña) {
 		this.id = id;
 		this.nombre = nombre;
 		this.correo = correo;
-    this.teléfono = teléfono;
+    this.teléfono = telefono;
     this.paypal = paypal;
-    this.dirección = dirección; 
+    this.dirección = direccion; 
     this.contraseña = contraseña;
 	}
 
@@ -74,12 +74,12 @@ public class Usuario {
 		this.correo = correo;
 	}
   
-    public int getTeléfono() {
-		return teléfono;
+    public int getTelefono() {
+		return telefono;
 	  }
 
-  public void setTeléfono(int teléfono) {
-		this.teléfono = teléfono;
+  public void setTelefono(int telefono) {
+		this.telefono = telefono;
 	}
       public String getPaypal() {
 		return paypal;
@@ -89,12 +89,12 @@ public class Usuario {
 		this.paypal = paypal;
 	}
   
-      public String getDirección() {
-		return dirección;
+      public String getDireccion() {
+		return direccion;
 	  }
 
-  public void setDirección(String dirección) {
-		this.dirección = dirección;
+  public void setDireccion(String direccion) {
+		this.direccion = direccion;
 	}
   
       public String getContraseña() {
