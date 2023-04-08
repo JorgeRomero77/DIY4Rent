@@ -13,7 +13,15 @@ public class Fotografías {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="ID")
   private int id;
+	
+  public Fotografías(){
+  }
+	
+  public Fotografías(int id){
+	this.id = id;	
+  }
   
 
 
