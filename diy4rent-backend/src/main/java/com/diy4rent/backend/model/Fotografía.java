@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "fotografíass")
+@Table(name = "fotografías")
 
 public class Fotografías {
   
@@ -15,12 +15,15 @@ public class Fotografías {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name="ID", unique= true, nullable= false)
   private int id;
+  @Column(name= "HERRAMIENTAID")
+  private int herramientaId;
 	
   public Fotografías(){
   }
 	
-  public Fotografías(int id){
-	this.id = id;	
+  public Fotografías(int id, int herramientaId){
+	this.id = id;
+	this.herramientaId = herramientaId;
   }
   
 
@@ -31,6 +34,14 @@ public class Fotografías {
 
   public void setId(int id) {
 		this.id = id;
+	}
+	
+  public int getHerramientaId() {
+		return herramientaId;
+	  }
+
+  public void setHerramientaId(int herramientaId) {
+		this.herramientaId = herramientaId;
 	}
   
 }
