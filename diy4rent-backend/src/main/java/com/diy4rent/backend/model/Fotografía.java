@@ -7,9 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "fotografías")
+@Table(name = "fotografias")
 
-public class Fotografías {
+public class Fotografia {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +18,10 @@ public class Fotografías {
   @Column(name= "HERRAMIENTAID")
   private int herramientaId;
 	
-  public Fotografías(){
+  public Fotografia(){
   }
 	
-  public Fotografías(int id, int herramientaId){
+  public Fotografia(int id, int herramientaId){
 	this.id = id;
 	this.herramientaId = herramientaId;
   }
