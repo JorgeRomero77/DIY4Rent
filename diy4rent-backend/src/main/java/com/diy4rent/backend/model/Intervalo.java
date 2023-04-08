@@ -13,13 +13,18 @@ public class Intervalo {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "ID")
   private int id;
+  @Column(name = "INICIO")
   private String inicio;
+  @Column(name = "FIN")
   private String fin;
+	
+	public Intervalo(){
+	}
 
 	
 	public Intervalo(int id, String inicio, String fin) {
-		super();
 		this.id = id;
 		this.inicio = inicio;
 		this.fin = fin;
