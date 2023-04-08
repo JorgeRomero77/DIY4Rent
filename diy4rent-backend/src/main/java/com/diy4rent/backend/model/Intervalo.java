@@ -19,15 +19,18 @@ public class Intervalo {
   private String inicio;
   @Column(name = "FIN", nullable= false)
   private String fin;
+  @Column(name = "HERRAMIENDAID" , nullable= false)
+  private int herramientaId;
 	
 	public Intervalo(){
 	}
 
 	
-	public Intervalo(int id, String inicio, String fin) {
+	public Intervalo(int id, String inicio, String fin, int herramientaId) {
 		this.id = id;
 		this.inicio = inicio;
 		this.fin = fin;
+		this.herramientaId = herramientaId;
 	}
 
 
@@ -51,6 +54,14 @@ public class Intervalo {
 	}
   public void setFin(String fin) {
 		this.fin = fin;
+	}
+	
+	  public int getHerramientaId() {
+		return herramientaId;
+	  }
+
+  public void setHerramientaId(int herramientaId) {
+		this.herramientaId = herramientaId;
 	}
   
 }
