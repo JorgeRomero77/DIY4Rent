@@ -15,14 +15,17 @@ public class Fotografia {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name="ID", unique= true, nullable= false)
   private int id;
+  @Column(name="ARCHIVO", nullsable= false)
+  private Blob archivo;
   @Column(name= "HERRAMIENTAID")
   private int herramientaId;
 	
   public Fotografia(){
   }
 	
-  public Fotografia(int id, int herramientaId){
+  public Fotografia(int id, Blob archivo, int herramientaId){
 	this.id = id;
+	this.archivo = archivo;
 	this.herramientaId = herramientaId;
   }
   
