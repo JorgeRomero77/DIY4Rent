@@ -13,7 +13,7 @@ public class Fotografías {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name="ID")
+  @Column(name="ID", unique= true, nullable= false)
   private int id;
 	
   public Fotografías(){
